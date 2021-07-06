@@ -1,0 +1,371 @@
+body {
+    font-family: 'Bubbler One', sans-serif;
+}
+
+/******************** NAV SECTION   ********************************/
+
+.nav-link {
+    font-size: 2rem;
+    font-weight: bold;
+}
+nav .navbar-nav li a:hover {
+    color: darkcyan !important;
+}
+.navbar-icon {
+    font-size: 2rem;
+    color: darkcyan !important;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.navbar-icon:hover {
+    color: #000 !important;
+}
+.navbar-toggler {
+    color: darkcyan !important;
+    border: none !important;
+    font-size: 2rem;
+}
+.navbar {
+    background-color: #f5f5f5;
+}
+
+/******************** HEADER SECTION   ********************************/
+
+.header {
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    overflow: hidden;
+}
+.height-max {
+    min-height: calc(100vh - 80px);
+    background-image: url(img/headerBcg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation-name: zoom;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2) translateX(-5%);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.title-heading {
+    background: rgba(0, 0, 0, 0.4);
+    border-left: 0.3rem solid darkcyan;
+}
+.title {
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+@media screen and (min-width:768px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+.title-icon {
+    color: #f5f5f5;
+    text-decoration: none !important;
+}
+.title-icon:hover {
+    color: darkcyan !important;
+    opacity: 0.6;
+}
+
+/******************** TITLES SECTION   ********************************/
+
+.section-title-special {
+    background-color: darkcyan;
+    opacity: 0.6;
+    padding: 0.5rem 2rem;
+    color: #f5f5f5;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+.skills-icon {
+    font-size: 3rem;
+    color: darkcyan !important;
+    background: lightgray;
+}
+.skills-icon:hover {
+    color: #f5f5f5!important;
+}
+.skills-underline {
+    width: 5rem;
+    height: 0.3rem;
+    background-color: darkcyan !important;
+    margin: 1rem auto;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+}
+.hidePreloader {
+    display: none!important;
+}
+
+/******************** INVENTORY SECTION   ********************************/
+
+.inventory {
+    background-color: #f5f5f5;
+}
+.card-img-top {
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+}
+.btn-price-special {
+    background-color: darkcyan !important;
+    padding: 0.5rem 2rem;
+    clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+    font-weight: bold;
+    color: #f5f5f5;
+}
+.btn-price-special:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: all 1s ease-in-out;
+    background-color: #5bc0de !important;
+    color: #f5f5f5 !important;
+    font-weight: bold!important;
+}
+
+/******************** QUESTION SECTION   ********************************/
+
+.question {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bg-right {
+    background: rgba(255, 188, 66, 0.50);
+}
+.bg-right i,
+.bg-left i {
+    color: #f5f5f5 !important;
+    font-size: 4rem;
+}
+.bg-left {
+    background: rgba(33, 131, 128, 0.50);
+}
+
+/******************** FEATURES SECTION   ********************************/
+
+.features {
+    background: #f5f5f5;
+}
+.featured-icon {
+    position: absolute;
+    color: aliceblue;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 1 ease-in-out;
+}
+.featured-icon:hover {
+    color: antiquewhite;
+}
+.img-container:hover .featured-icon {
+    opacity: 1;
+}
+.featured-icon-car {
+    font-size: 1.5rem;
+    color: darkcyan !important;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+.featured-icon-car:hover {
+    color: #000 !important;
+}
+.img-container {
+    position: relative;
+    background: darkcyan;
+    overflow: hidden;
+}
+.featured-photo {
+    transition: all 1s ease-in-out;
+}
+.img-container:hover .featured-photo {
+    transform: scale(1.3);
+    opacity: 0.5;
+}
+.featured-item {
+    background: #fff;
+    border-radius: 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.featured-item:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/******************** GALLERY SECTION   ********************************/
+
+.gallery-item {
+    background: darkcyan;
+    position: relative;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    transition: all 1s ease-in-out;
+}
+.gallery-item:hover .gallery-img {
+    opacity: 0.5;
+}
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid #fff;
+    outline-offset: -2rem;
+    transition: all 1s ease-in-out;
+    transform: scale(0);
+}
+.gallery-item:hover:after {
+    transform: scale(1);
+}
+
+/******************** CONTACT SECTION   ********************************/
+
+.contact {
+    background-image: url(https://cdn.pixabay.com/photo/2019/11/05/11/36/oldtimer-4603317_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contact-input {
+    font-size: 1.2rem;
+    color: #f0ad4e !important;
+    font-weight: 900;
+}
+.btn-submit {
+    color: #f0ad4e !important;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.btn-submit:hover {
+    background-color: #f0ad4e !important;
+    color: #000 !important;
+}
+.contact-input::placeholder {
+    font-size: 1.2rem;
+    color: #f0ad4e !important;
+    font-weight: 900;
+}
+.contact-input:focus {
+    background: transparent;
+    border-color: aliceblue!important;
+}
+
+/******************** VIDEO SECTION   ********************************/
+
+.services {
+    position: relative;
+    min-height: 85vh;
+    max-width: 100vw;
+    margin: 0 auto;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+}
+.video-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 131, 128, 0.50);
+    z-index: -2;
+}
+.service {
+    background: #000;
+    color: #f5f5f5;
+    transition: all 1s ease-in-out;
+}
+.service:hover {
+    background: #f5f5f5;
+    color: #000;
+    padding-left: 2.5rem!important;
+}
+.service-icon {
+    font-size: 4rem;
+    color: darkcyan;
+}
+
+/******************** CUSTOMERS SECTION   ********************************/
+
+.bg-top-img-1 {
+    height: 300px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/06/05/28/car-1957037_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-top-img-2 {
+    height: 300px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/12/28/23/41/car-3046424_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-top-img-3 {
+    height: 300px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/09/02/08/32/cuba-1638594_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image {
+    margin-top: -100px;
+}
+.avatar-container {
+    width: 90%;
+    border: 1px solid #eee;
+}
+
+/******************** FOOTER SECTION   ********************************/
+
+footer {
+    background-color: darkcyan;
+}
+.icon-footer {
+    color: #f5f5f5!important;
+    font-size: 2.5rem;
+}
+.icon-footer:hover {
+    color: blue !important;
+}
